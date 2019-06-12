@@ -1,0 +1,91 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+}
+
+main {
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+}
+
+
+h1 {
+  text-align: center;
+  padding: 0;
+}
+
+hr {
+  width: 100%;
+}
+
+.detail-header {
+  align-self: center;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.meal-detail-section {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  width: 100%;
+}
+form .meal-detail-input {
+  margin: 0 0 10px 0;
+}
+form .meal-detail-submit {
+  display: flex;
+  align-self: center;
+  align-content: space-between;
+  margin: 0;
+}
+form .meal-detail-button {
+  width: 100px;
+  text-align: center;
+  margin: 0 5px;
+}
+form input {
+  text-align: right;
+}
+
+.charges-earnings-section {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.charges-earnings-section > section {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.customer-charges-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.customer-charges-section .charges-amt {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+
+.charges-earnings-section p {
+  margin: 0;
+}
+
+#reset-button {
+  align-self: flex-end;
+  width: 50px;
+}

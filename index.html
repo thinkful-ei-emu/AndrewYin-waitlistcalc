@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Waitstaff Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Waitstaff Calculator</h1>
+  <main>
+    <section class="meal-detail-section">
+      <form id="meal-detail-form">
+        <p class="detail-header">Enter the Meal Details</p>
+        <hr>
+        <section class="meal-detail-input">
+          <label for="meal-price">Base Meal Price: $</label>
+          <input id="meal-price" type="number" min="0" step="0.01" value="">    
+        </section>
+        <section class="meal-detail-input">
+          <label for="tax-rate">Tax Rate: %</label>
+          <input id="tax-rate" type="number" min="0" step="0.01">    
+        </section>
+        <section class="meal-detail-input">
+          <label for="tip-percent">Tip Percentage: %</label>
+          <input id="tip-percent" type="number" min="0" step="0.01">
+        </section>
+        <section class="meal-detail-submit">
+          <input id="submit-button" class="meal-detail-button" type="submit" value="test">
+          <button id="cancel-button" class="meal-detail-button" type="button">cancel</button>
+        </section>
+      </form>
+    </section>
+
+    <section class="charges-earnings-section">
+      <section>
+        <p class="detail-header">Customer Charges</p>
+        <hr>
+        <section class="customer-charges-section">
+          <p>Subtotal: <span id="subtotal-amt" class="charges-amt"><span></p>
+          <p>Tax: <span id="tax-amt" class="charges-amt"></span></p>
+          <p>Tip: <span id="tip-amt" class="charges-amt"></span></p>
+          <hr>
+          <p>Total: <span id="total-amt" class="charges-amt"></span></p>
+        </section>
+      </section> 
+
+      <section class="earnings-info-section">
+        <p class="detail-header">My Earnings Info</p>
+        <hr>
+        <section class="customer-charges-section">
+          <p>Total Tip: <span id="total-tip" class="charges-amt"></span></p>
+          <p>Meal Count: <span id="meal-count" class="charges-amt"></span></p>
+          <p>Avg Tip/Meal: <span id="avg-tip" class="charges-amt"></span></p>
+        </section>
+      </section>  
+    </section>
+  </main>
+  <button id="reset-button" type="button">reset</button>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src="app.js""></script>
+</body>
+</html>
